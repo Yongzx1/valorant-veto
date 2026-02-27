@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback, ChangeEvent } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
-type MapId = "ascent" | "bind" | "haven" | "split" | "lotus" | "sunset" | "icebox" | "abyss" | "fracture" | "pearl";
+type MapId = "ascent" | "bind" | "haven" | "split" | "lotus" | "sunset" | "icebox" | "abyss" | "fracture" | "pearl" | "breeze" | "corrode";
 type Format = "bo1" | "bo3" | "bo5";
 type MapState = "available" | "banned" | "picked" | "decider";
 type Side = "attack" | "defense";
@@ -69,6 +69,8 @@ const ALL_MAPS: ValorantMap[] = [
   { id: "abyss",    name: "Abyss",    color: "#4A5A9A" },
   { id: "fracture", name: "Fracture", color: "#9AC97A" },
   { id: "pearl",    name: "Pearl",    color: "#7AC9C9" },
+  { id: "breeze",   name: "Breeze",   color: "#7AC9E8" },
+  { id: "corrode",   name: "Corrode",   color: "#7A9A7A" },
 ];
 
 // ─── Map images — place files in /public/maps/ ────────────────────────────────
@@ -84,6 +86,8 @@ const MAP_IMAGES: Record<MapId, string> = {
   abyss:    "/maps/abyss.jpg",
   fracture: "/maps/fracture.jpg",
   pearl:    "/maps/pearl.jpg",
+  breeze:  "/maps/breeze.jpg",
+  corrode:  "/maps/corrode.jpg",
 };
 
 const VETO_SEQUENCES: Record<Format, VetoStep[]> = {
@@ -124,6 +128,8 @@ const mapGradients: Record<MapId, string> = {
   abyss:    "from-blue-950 via-indigo-900 to-stone-900",
   fracture: "from-lime-900 via-green-900 to-stone-900",
   pearl:    "from-teal-900 via-cyan-900 to-stone-900",
+  breeze:  "from-sky-900 via-cyan-900 to-stone-900",
+  corrode:  "from-green-950 via-green-800 to-stone-900",
 };
 
 const mapAccents: Record<MapId, string> = {
@@ -137,6 +143,8 @@ const mapAccents: Record<MapId, string> = {
   abyss:    "#6A7ACE",
   fracture: "#AAE87A",
   pearl:    "#7AE8CE",
+  breeze:  "#7ACCE8",
+  corrode:  "#7A9A7A",
 };
 
 const FONTS = `
