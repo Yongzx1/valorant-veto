@@ -128,7 +128,7 @@ function CreditsCard() {
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
           <div
             className="absolute top-12 right-0 w-72 sm:w-80 rounded-2xl border border-[#5865F2]/40 p-5 shadow-2xl z-50"
-            style={{ background: "linear-gradient(135deg, #1a1040 0%, #0e0c1e 100%)", fontFamily: "Rajdhani, sans-serif", boxShadow: "0 0 40px rgba(88,101,242,0.2)" }}
+            style={{ background: "linear-gradient(135deg, #090912 0%, #0e0c1e 100%)", fontFamily: "Rajdhani, sans-serif", boxShadow: "0 0 40px rgba(88,101,242,0.2)" }}
           >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
