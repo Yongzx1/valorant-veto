@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Valorant Veto",
   description: "Developed by f.",
+=======
+  title: "Valorant-Veto",
+  description: "Developed by f",
+>>>>>>> ad103e06b0cafb04e3f79d6eb3577ed4bc957423
 };
 
 export default function RootLayout({
