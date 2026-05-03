@@ -46,7 +46,7 @@ const ALL_MAPS: ValorantMap[] = [
   { id: "corrode",  name: "Corrode",  color: "#7A9A7A" },
 ];
 
-const ACTIVE_MAP_IDS: MapId[] = ["bind", "haven", "split", "fracture", "lotus", "breeze", "corrode"];
+const ACTIVE_MAP_IDS: MapId[] = ["ascent", "haven", "split", "fracture", "lotus", "breeze", "corrode"];
 
 const MAP_IMAGES: Record<MapId, string> = {
   ascent:   "/maps/ascent.jpg",
